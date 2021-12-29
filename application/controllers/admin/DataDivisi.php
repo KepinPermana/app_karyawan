@@ -31,11 +31,11 @@ class DataDivisi extends CI_Controller{
         $this->ModelDivisi->tambahData($data,'data_divisi');
         redirect('admin/dataDivisi');    
     }
-    public function editData($id_divisi)
+    public function editData($id)
     {
+        $where = array('id_divisi' => $id);
+		$data['divisi'] = $this->db->query("SELECT * FROM data_divisi WHERE id_divisi='$id'")->result();
         $data ['title'] = "Edit Data Divisi";
-        $where = array('id_divisi' => $id_divisi);
-		$data['karyawan'] = $this->ModelDivisi->editData($where,'data_divisi')->result();
         $this->load->view('templates_admin/header',$data); 
         $this->load->view('templates_admin/sidebar'); 
         $this->load->view('admin/editDataDivisi',$data); 
@@ -59,6 +59,15 @@ class DataDivisi extends CI_Controller{
 			$this->ModelDivisi->updateData($where,$data,'data_divisi');
  			redirect('admin/dataDivisi');
     }
+    public function hapusData($id)
+		{
+			$where = array('id_divisi' => $id);
+			$this ->ModelDivisi->hapus_data($where, 'data_divisi');
+
+			$this->session->set_flashdata('success', 'Data Kontrakan Berhasi Di Hapus !!!');
+
+			redirect('admin/dataDivisi');
+		}
 
     
 }

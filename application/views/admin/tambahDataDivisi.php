@@ -5,8 +5,6 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800"><?= $title ?></h1>
                     </div>
-               
-<!--  -->
                         <div class="modal-body">
 			<form action="<?php echo base_url().'admin/dataDivisi/tambahAksiData'; ?>" method="post" enctype="multipart/form-data">
 

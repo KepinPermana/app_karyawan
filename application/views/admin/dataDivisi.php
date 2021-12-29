@@ -21,7 +21,7 @@
                             <td><?= $no++  ?></td>
                             <td><?= $j->nama_divisi;?></td>
                             <td><?php echo anchor('admin/dataDivisi/editData/'.$j->id_divisi,'<div class="btn btn-success btn-sm"><i class="fas fa-fw  fa-edit"></i></div>') ?></td>
-                            <td><?php echo anchor('admin/data_kontrakan/hapus/'.$j->id_divisi,'<div class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i></div>') ?></td>
+                            <td><?php echo anchor('admin/DataDivisi/hapusData/'.$j->id_divisi,'<div class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i></div>') ?></td>
                            </td>
                         </tr>
                     <?php endforeach; ?>

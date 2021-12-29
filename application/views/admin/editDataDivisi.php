@@ -14,6 +14,7 @@
 	<input type="hidden" name="id_divisi" class="form-control" value="<?php echo $j->id_divisi ?>">
 	<input type="text" name="nama_divisi" class="form-control" value="<?php echo $j->nama_divisi ?>">
 </div>
+<button type="submit" class="btn btn-primary btn-sm mt-3">Simpan</button>
 </form>
 
                     <?php endforeach; ?>
