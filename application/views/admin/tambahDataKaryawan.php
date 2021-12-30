@@ -14,6 +14,14 @@
 				<label>Nama Karyawan</label>
 				<input type="text" name="nama_karyawan" class="form-control" required>
 			</div>
+			<div class="form-group">
+				<label>Username</label>
+				<input type="text" name="username" class="form-control" required>
+			</div>
+			<div class="form-group">
+				<label>Password</label>
+				<input type="password" name="password" class="form-control" required>
+			</div>
             <div class="form-group">
 				<label>Alamat</label>
 				<input type="text" name="alamat" class="form-control" required>
@@ -25,6 +33,15 @@
             <div class="form-group">
 				<label>Divisi</label>
 				<input type="text" name="divisi" class="form-control" required>
+			</div>
+			
+			<div class="form-group">
+				<label>Hak Akses</label>
+				<select name="hak_akses" class="form-control">
+   					<option value="">--Pilih Hak Akses--</option>
+					   <option value="1">Admin</option>
+					   <option value="2">Karyawan</option>
+				</select>
 			</div>
             
         <button type="submit" class="btn btn-primary">Simpan</button>

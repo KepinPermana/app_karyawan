@@ -17,7 +17,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= base_url('admin/dashboard') ?>">
+                <a class="nav-link" href="<?= base_url('karyawan/dashboard') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
@@ -26,19 +26,7 @@
             <hr class="sidebar-divider">
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-database"></i>
-                    <span>Master Data</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="<?= base_url('admin/dataKaryawan')?>">Data Karyawan</a>
-                        <a class="collapse-item" href="<?= base_url('admin/dataDivisi')?>">Data Divisi</a>
-                    </div> 
-                </div>
-            </li>
+           
 
             <!-- Nav Item - Utilities Collapse Menu -->
             

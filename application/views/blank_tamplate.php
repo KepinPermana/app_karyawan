@@ -19,3 +19,42 @@
                             <button type="submit" class="btn btn-success">Submit</button>
                         
                         </form>
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="col-md-7">
+                            <table class="table">
+                                <td>Email</td>
+                                <td>:</td>
+                                <td><?php echo $p->email ?></td>
+
+                                <td>Nama Karyawan</td>
+                                <td>:</td>
+                                <td><?php echo $p->nama_karyawan ?></td>
+
+                                <td>Alamat</td>
+                                <td>:</td>
+                                <td><?php echo $p->alamat ?></td>
+
+                                <td>Username</td>
+                                <td>:</td>
+                                <td><?php echo $p->username ?></td>
+
+                                <td>No Telepon</td>
+                                <td>:</td>
+                                <td><?php echo $p->divisi ?></td>
+
+                                <td>Divisi</td>
+                                <td>:</td>
+                                <td><?php echo $p->divisi ?></td>
+                            </table>
+                        </div>

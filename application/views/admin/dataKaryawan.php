@@ -16,7 +16,9 @@
                         <th class="text-center">Alamat</th>
                         <th class="text-center">No Telelpon</th>
                         <th class="text-center">Divisi</th>
+                        <th class="text-center">Hak Akses</th>
                         <th class="text-center">Aksi</th>
+                        
                     </tr>
                     <?php $no=1; foreach ($karyawan as $k): ?>
                         <tr>
@@ -26,8 +28,13 @@
                             <td><?= $k->alamat;?></td>
                             <td><?= $k->no_tlp;?></td>
                             <td><?= $k->divisi;?></td>
-                            <td><?php echo anchor('admin/dataDivisi/editData/'.$k->id_karyawan,'<div class="btn btn-success btn-sm"><i class="fas fa-fw  fa-edit"></i></div>') ?>
-                            <?php echo anchor('admin/DataDivisi/hapusData/'.$k->id_karyawan,'<div class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i></div>') ?></td>
+                            <?php if ($k->hak_akses=='1'){ ?>
+                                <td>Admin</td>
+                                <?php } else{ ?>
+                                    <td>Karyawan</td>
+                                    <?php }?>
+                            <td><?php echo anchor('admin/dataKaryawan/editData/'.$k->id_karyawan,'<div class="btn btn-success btn-sm"><i class="fas fa-fw  fa-edit"></i></div>') ?>
+                            <?php echo anchor('admin/DataKaryawan/hapusData/'.$k->id_karyawan,'<div class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i></div>') ?></td>
                            </td>
                         </tr>
                     <?php endforeach; ?>
